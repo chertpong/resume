@@ -1,17 +1,16 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <home></home>
+    <navigation-bar></navigation-bar>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import Home from './components/Home'
-
+import NavigationBar from './components/NavigationBar'
 export default {
   name: 'app',
   components: {
-    Home
+    NavigationBar
   }
 }
 </script>
@@ -24,5 +23,14 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+html,body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
 }
 </style>
